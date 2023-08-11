@@ -1,15 +1,31 @@
 pluginManagement {
     repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
+        maven{
+            url 'http://repoandroid:8081/repository/maven-public/'
+            allowInsecureProtocol=true
+            credentials{
+                username 'android'
+                password '123456'
+            }
+        }
+        //google()
+        //mavenCentral()
+        //gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
-        mavenCentral()
+        maven{
+            url 'http://repoandroid:8081/repository/maven-public/'
+            allowInsecureProtocol=true
+            credentials{
+                username 'android'
+                password '123456'
+            }
+        }
+        //google()
+        //mavenCentral()
     }
 }
 rootProject.name = "TESTE-TCC"
